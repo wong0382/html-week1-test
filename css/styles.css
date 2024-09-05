@@ -46,3 +46,53 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/**************************************************************************
+main style
+**************************************************************************/
+
+html{
+    background: #456;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+body{
+    /* this adds some spacing between lines, great for accessibility */
+    line-height: 1.6;
+    width: 800px;
+    /* two values in margin mean top-bottom, left-right margin 0 auti centres the elemtnt in its parent */
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+/* to target a class, use a . */
+.large {
+    font-size: 24px;
+    font-size: bold;
+}
+
+/* the CSS box model has margin, border, and padding margin is on the outside and pushes other elements way padding is on the inside and oushes content in */
+main{
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid black;
+    /* the main element is now
+        800px + 10x2 + 1522 + 2x2 
+        or... 854px wide*/
+}
+
+main p{
+    color: blue;
+}
+
+main img{
+    width: 30%;
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
